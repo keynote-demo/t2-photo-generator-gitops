@@ -1,0 +1,15 @@
+app:
+  name: t2-photo-generator-app
+  namespace: t2
+  cluster: .apps.keynote.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/keynote-demo/t2-photo-generator
+  org: keynote-demo
+  name: t2-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: t2/photo-generator-app
+  tag: latest
